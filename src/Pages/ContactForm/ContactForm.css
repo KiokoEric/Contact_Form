@@ -1,0 +1,63 @@
+.ContactForm {
+    background-image: url(../../Images/Background_Image.png);
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 0rem;
+    height: 100%;
+    padding-top: 8.5rem;
+}
+.ContactForm section {
+    width: 500px;
+}
+.ContactForm section form input {
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 0.5rem;
+    outline: 0;
+    width: 500px;
+}
+.ContactForm section form input[type="text"] {
+    font-family: 'Instrument Serif', serif;
+    font-size: 18px;
+    padding-left: 0.65rem;
+}
+.ContactForm section form input[type="email"] {
+    font-family: 'Instrument Serif', serif;
+    font-size: 18px;
+    padding-left: 0.65rem;
+}
+.ContactForm section form input[type="number"] {
+    font-family: 'Instrument Serif', serif;
+    font-size: 18px;
+    padding-left: 0.65rem;
+}
+.ContactForm section form textarea {
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 18px;
+    height: 150px;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    width: 500px;
+}
+.ContactForm section form textarea[type="text"]{
+    font-family: 'Instrument Serif', serif;
+    font-size: 18px;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+.ContactForm section form button {
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Instrument Serif', serif;
+    font-size: 18px;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.1rem;
+    width: 130px;
+}
