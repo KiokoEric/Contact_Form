@@ -6,7 +6,7 @@ import { useSnackbar } from 'notistack';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { FaLinkedin } from "react-icons/fa";
-import { IoMailSharp } from "react-icons/io5";
+import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -38,21 +38,21 @@ const ContactForm = () => {
 return (
     <div className='ContactForm' >
         <section>
-            <h2>Let's get in touch</h2>
+            <h2>Let's Get In Touch</h2>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio aliquam illum consequuntur explicabo natus, odit incidunt quas libero harum! A hic nihil enim unde, pariatur numquam sed error ab minus?
             </p>
             <div>
-                <FaMapLocationDot /> Nairobi, Kenya
+                <FaMapLocationDot className='Connect' size="1.5rem" /> Nairobi, Kenya
             </div>
             <div>
-                <IoMailSharp /> Michaelmbwele@gmail.com
+                <IoMdMail className='Connect' size="1.5rem"  /> Michaelmbwele@gmail.com
             </div>
             <div>
-                <FaPhoneAlt /> (+254) 112 528 285
+                <FaPhoneAlt className='Connect' size="1.5rem"  /> (+254) 112 528 285
             </div>
             <div>
-                <p>Connect with us:</p>
+                <p>Connect with me:</p>
                 <figure>
                     <FaInstagramSquare size="2rem" />
                     <FaSquareXTwitter size="2rem"  />
@@ -62,7 +62,7 @@ return (
             </div>
         </section>
         <section>
-            <h2>Contact Us</h2>
+            <h2>Contact Me</h2>
             <form ref={formRef} onSubmit={handleSubmit(onSubmit)} >
                 <div>
                     <input type="text" name="Name" id="Name" placeholder='Enter Full Name'  
@@ -79,7 +79,9 @@ return (
                 </div>
                 <textarea type="text" placeholder='Enter Message' name="Message" id="Message" cols="20" rows="10" {...register("Message")} ></textarea>
                 <span className="Error">{errors.Message?.message}</span>
-                <button onClick={handleSubmit(onSubmit)}  type="submit">Send Message</button>
+                <div>
+                    <button onClick={handleSubmit(onSubmit)}  type="submit">Send Message</button>
+                </div>
             </form>
         </section>
     </div>
